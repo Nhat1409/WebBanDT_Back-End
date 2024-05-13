@@ -91,7 +91,7 @@ const forgotPassword = async (email) => {
 
         const resetToken = await generateRandomToken(32);
 
-        // Lưu trữ mã thông báo và thời hạn của nó trong tài khoản người dùng
+      
         user.resetToken = resetToken;
         user.resetTokenExpires = new Date(Date.now() + 60 * 1000);
         await user.save();

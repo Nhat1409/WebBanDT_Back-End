@@ -4,6 +4,5 @@ const newsSchema = new mongoose.Schema({
   content: String,
 });
 
-// Tạo model từ schema
 const News = mongoose.model("News", newsSchema);
 module.exports = News;
